@@ -7,7 +7,8 @@ namespace MobileUno.ViewModels
 	{
 		public MainViewModel()
 		{
-			BackgroundSource = $"Assets/Images/{DateTime.Now.GetSeason().ToString().ToLower()}.jpg";
+			var season = DateTime.Now.GetSeason();
+			BackgroundSource = $"Assets/Images/{season.ToString().ToLower()}.jpg";
 		}
 
 		public string BackgroundSource { get; }
