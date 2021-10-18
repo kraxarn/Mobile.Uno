@@ -1,5 +1,4 @@
 using Windows.UI.Xaml.Controls;
-using MobileUno.ViewModels;
 
 namespace MobileUno.Views
 {
@@ -8,7 +7,6 @@ namespace MobileUno.Views
 		public MainPage()
 		{
 			InitializeComponent();
-			DataContext = new MainViewModel();
 		}
 	}
 }

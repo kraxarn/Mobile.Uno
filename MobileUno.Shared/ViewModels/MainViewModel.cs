@@ -5,7 +5,11 @@ namespace MobileUno.ViewModels
 {
 	public class MainViewModel
 	{
-		public string BackgroundSource =>
-			$"Assets/Images/{DateTime.Now.GetSeason().ToString().ToLower()}.jpg";
+		public MainViewModel()
+		{
+			BackgroundSource = $"Assets/Images/{DateTime.Now.GetSeason().ToString().ToLower()}.jpg";
+		}
+
+		public string BackgroundSource { get; }
 	}
 }
