@@ -3,6 +3,8 @@
     <OutputType Condition="'$(Configuration)'=='Release'">WinExe</OutputType>
     <OutputType Condition="'$(Configuration)'=='Debug'">Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>default</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup Condition="exists('..\MobileUno.UWP')">
     <EmbeddedResource Include="..\MobileUno.UWP\Package.appxmanifest" LogicalName="Package.appxmanifest" />

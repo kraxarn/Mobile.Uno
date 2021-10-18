@@ -12,6 +12,8 @@
     <!-- Required for C# Hot Reload -->
     <UseInterpreter Condition="'$(Configuration)' == 'Debug'">True</UseInterpreter>
     <IsUnoHead>true</IsUnoHead>
+    <LangVersion>default</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Uno.UI" Version="3.10.11" />

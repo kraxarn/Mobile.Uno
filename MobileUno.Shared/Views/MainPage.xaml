@@ -1,5 +1,5 @@
 <Page
-    x:Class="MobileUno.MainPage"
+    x:Class="MobileUno.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MobileUno"
@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Stretch="UniformToFill" Source="{Binding BackgroundSource}"/>
         <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
     </Grid>
 </Page>
