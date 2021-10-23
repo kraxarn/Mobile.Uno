@@ -36,8 +36,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\spring.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\summer.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\winter.jpg" />
-    <Page Include="$(MSBuildThisFileDirectory)Styles\NavigationView.xaml" />
-    <Page Include="$(MSBuildThisFileDirectory)Styles\CommandBar.xaml" />
+    <Folder Include="$(MSBuildThisFileDirectory)Styles" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
