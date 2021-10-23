@@ -1,10 +1,9 @@
-namespace MobileUno.Enums
+namespace MobileUno.Enums;
+
+public enum Season
 {
-	public enum Season
-	{
-		Winter,
-		Spring,
-		Summer,
-		Autumn,
-	}
+	Winter,
+	Spring,
+	Summer,
+	Autumn,
 }

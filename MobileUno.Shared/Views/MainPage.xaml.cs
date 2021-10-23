@@ -1,12 +1,11 @@
 using Windows.UI.Xaml.Controls;
 
-namespace MobileUno.Views
+namespace MobileUno.Views;
+
+public sealed partial class MainPage : Page
 {
-	public sealed partial class MainPage : Page
+	public MainPage()
 	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
+		InitializeComponent();
 	}
 }
