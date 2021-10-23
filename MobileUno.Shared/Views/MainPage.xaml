@@ -25,7 +25,7 @@
             IsBackButtonVisible="Collapsed">
             <!-- Main title -->
             <muxc:NavigationView.Header>
-                <StackPanel Orientation="Horizontal" Padding="24 6">
+                <StackPanel Orientation="Horizontal" Padding="12 6">
                     <!-- Avatar -->
                     <Grid>
                         <Ellipse Fill="#444444" Width="58" Height="58" />
