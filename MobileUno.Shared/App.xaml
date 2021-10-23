@@ -9,10 +9,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <!-- Fluent design -->
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Material design colors -->
-                <MaterialColors xmlns="using:Uno.Material" />
-                <!-- Material design controls -->
-                <MaterialResources xmlns="using:Uno.Material" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
