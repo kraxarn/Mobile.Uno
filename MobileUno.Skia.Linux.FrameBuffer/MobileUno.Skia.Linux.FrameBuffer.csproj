@@ -17,8 +17,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
-    <PackageReference Include="Uno.UI.RemoteControl" Version="3.11.0-dev.461" />
-    <PackageReference Include="Uno.UI.Skia.Linux.FrameBuffer" Version="3.11.0-dev.461" />
+    <PackageReference Include="Uno.UI.RemoteControl" Version="3.11.0-dev.479" />
+    <PackageReference Include="Uno.UI.Skia.Linux.FrameBuffer" Version="3.11.0-dev.479" />
   </ItemGroup>
   <Import Project="..\MobileUno.Shared\MobileUno.Shared.projitems" Label="Shared" />
 </Project>
