@@ -71,17 +71,17 @@
                 <muxc:NavigationViewItemSeparator />
                 <muxc:NavigationViewItem
                     Icon="{StaticResource IconOfficeBuilding}"
-                    Content="Select company" />
+                    Content="Öppna företag" />
                 <muxc:NavigationViewItem
                     Icon="{StaticResource IconUser}"
-                    Content="My information" />
+                    Content="Mina uppgifter" />
             </muxc:NavigationView.MenuItems>
 
             <!-- Sidebar footer items -->
             <muxc:NavigationView.FooterMenuItems>
                 <muxc:NavigationViewItem
                     Icon="{StaticResource IconInfo}"
-                    Content="About Mobile" />
+                    Content="Om Mobile" />
             </muxc:NavigationView.FooterMenuItems>
 
             <!-- Items -->
