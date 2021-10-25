@@ -3,10 +3,10 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    xmlns:local="using:MobileUno"
     xmlns:viewModels="using:MobileUno.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:MobileUno.DataTemplate"
     mc:Ignorable="d">
 
     <Page.DataContext>
@@ -29,7 +29,7 @@
                     <!-- Name -->
                     <StackPanel Orientation="Vertical" VerticalAlignment="Center" Padding="12 0">
                         <TextBlock
-                            Text="Welcome"
+                            Text="Välkommen"
                             HorizontalAlignment="Right"
                             Style="{StaticResource SubtitleTextBlockStyle}" />
                         <TextBlock
@@ -59,9 +59,9 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0" Grid.Column="0" FontWeight="Bold" Text="Logged in as:" />
+                    <TextBlock Grid.Row="0" Grid.Column="0" FontWeight="Bold" Text="Inloggad som:" />
                     <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CurrentUser}" />
-                    <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold" Text="Company:" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold" Text="Företag:" />
                     <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding CurrentCompany}" />
                 </Grid>
             </muxc:NavigationView.PaneHeader>
@@ -69,18 +69,48 @@
             <!-- Sidebar items -->
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItemSeparator />
-                <muxc:NavigationViewItem Icon="Street" Content="Select company" />
-                <muxc:NavigationViewItem Icon="Contact" Content="My information" />
+                <muxc:NavigationViewItem
+                    Icon="{StaticResource IconOfficeBuilding}"
+                    Content="Select company" />
+                <muxc:NavigationViewItem
+                    Icon="{StaticResource IconUser}"
+                    Content="My information" />
             </muxc:NavigationView.MenuItems>
 
             <!-- Sidebar footer items -->
             <muxc:NavigationView.FooterMenuItems>
-                <muxc:NavigationViewItem Icon="Help" Content="About Mobile" />
+                <muxc:NavigationViewItem
+                    Icon="{StaticResource IconInfo}"
+                    Content="About Mobile" />
             </muxc:NavigationView.FooterMenuItems>
 
             <!-- Items -->
             <muxc:NavigationView.Content>
-                <TextBlock Text="Items here..." />
+                <GridView ItemsSource="{Binding HomeItems}" Margin="24">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="data:HomeItem">
+                            <StackPanel Width="92" Margin="20" Orientation="Vertical">
+                                <!-- Icon -->
+                                <Grid Background="#FFFFFF" Height="92" CornerRadius="28" Padding="8">
+                                    <Viewbox>
+                                        <Grid>
+                                            <Path Fill="#656565" Data="{Binding PrimaryPath}" />
+                                            <Path Fill="#D4451D" Data="{Binding SecondaryPath}" />
+                                        </Grid>
+                                    </Viewbox>
+                                </Grid>
+                                <!-- Label -->
+                                <Grid Height="92" BorderBrush="Black" BorderThickness="2">
+                                    <TextBlock
+                                        TextAlignment="Center"
+                                        HorizontalTextAlignment="Center"
+                                        HorizontalAlignment="Stretch"
+                                        Text="{Binding Description}" />
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
             </muxc:NavigationView.Content>
         </muxc:NavigationView>
     </Grid>

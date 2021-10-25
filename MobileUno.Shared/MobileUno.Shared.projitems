@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataTemplate\HomeItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\Season.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\DateTimeExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
@@ -36,7 +37,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\spring.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\summer.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\winter.jpg" />
-    <Folder Include="$(MSBuildThisFileDirectory)Styles" />
+    <Content Include="$(MSBuildThisFileDirectory)Styles\.gitignore" />
+    <Page Include="$(MSBuildThisFileDirectory)Styles\Icons.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">

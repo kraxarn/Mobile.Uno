@@ -1,5 +1,7 @@
 using System;
+using System.Collections.ObjectModel;
 using System.Linq;
+using MobileUno.DataTemplate;
 using MobileUno.Extensions;
 
 namespace MobileUno.ViewModels;
@@ -11,8 +13,10 @@ public class MainViewModel
 		var season = DateTime.Now.GetSeason();
 		BackgroundSource = $"Assets/Images/{season.ToString().ToLower()}.jpg";
 
-		CurrentUser = "Sample User";
-		CurrentCompany = "000 Sample Company";
+		CurrentUser = "Exempel Användare";
+		CurrentCompany = "000 Exempel Företag";
+
+		HomeItems = new ObservableCollection<HomeItem>();
 	}
 
 	public string BackgroundSource { get; }
@@ -24,4 +28,6 @@ public class MainViewModel
 		.Aggregate(string.Empty, (s, w) => s + char.ToUpper(w[0]));
 
 	public string CurrentCompany { get; }
+
+	public ObservableCollection<HomeItem> HomeItems { get; }
 }

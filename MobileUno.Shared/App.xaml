@@ -9,6 +9,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <!-- Fluent design -->
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- SVG Icons -->
+                <ResourceDictionary Source="Styles/Icons.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
