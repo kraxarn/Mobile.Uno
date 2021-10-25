@@ -100,13 +100,13 @@
                                     </Viewbox>
                                 </Grid>
                                 <!-- Label -->
-                                <Grid Height="92" BorderBrush="Black" BorderThickness="2">
-                                    <TextBlock
-                                        TextAlignment="Center"
-                                        HorizontalTextAlignment="Center"
-                                        HorizontalAlignment="Stretch"
-                                        Text="{Binding Description}" />
-                                </Grid>
+                                <TextBlock
+                                    TextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    FontSize="{Binding FontSize}"
+                                    Margin="0 4 0 0"
+                                    Text="{Binding Description}" />
                             </StackPanel>
                         </DataTemplate>
                     </GridView.ItemTemplate>

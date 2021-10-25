@@ -16,4 +16,6 @@ public class HomeItem
 	public string PrimaryPath { get; set; } = string.Empty;
 
 	public string SecondaryPath { get; set; } = string.Empty;
+
+	public double FontSize => Description.Length < 16 ? 14 : 11;
 }
