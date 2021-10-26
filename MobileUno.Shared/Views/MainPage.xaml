@@ -92,7 +92,7 @@
                             <StackPanel Width="92" Margin="20" Orientation="Vertical">
                                 <!-- Icon -->
                                 <Grid Background="#FFFFFF" Height="92" CornerRadius="28" Padding="8">
-                                    <Viewbox>
+                                    <Viewbox Width="72" Height="72">
                                         <Grid>
                                             <Path Fill="#656565" Data="{Binding PrimaryPath}" />
                                             <Path Fill="#D4451D" Data="{Binding SecondaryPath}" />
