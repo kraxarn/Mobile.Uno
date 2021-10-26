@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MobileUno.WPF.Host"
         mc:Ignorable="d"
-        Title="MainWindow" Height="960" Width="540">
+        Title="Mobile Demo" 
+        Height="960" 
+        Width="540">
 	<ContentControl x:Name="root"/>
 </Window>
